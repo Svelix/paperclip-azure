@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-# stub: paperclip-azure 1.0.4.20180426111251 ruby lib
+# stub: paperclip-azure 1.0.4.20180517160113 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "paperclip-azure".freeze
-  s.version = "1.0.4.20180426111251"
+  s.version = "1.0.4.20180517160113"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["hireross.com".freeze]
-  s.date = "2018-04-26"
+  s.date = "2018-05-17"
   s.description = "Paperclip-Azure is a [Paperclip](https://github.com/thoughtbot/paperclip) storage driver for storing files in a Microsoft Azure Blob.".freeze
   s.email = ["help@hireross.com".freeze]
   s.extra_rdoc_files = ["History.txt".freeze, "Manifest.txt".freeze, "README.md".freeze]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/supportify/paperclip-azure".freeze
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
-  s.rubygems_version = "2.7.6".freeze
+  s.rubygems_version = "2.6.14".freeze
   s.summary = "Paperclip-Azure is a [Paperclip](https://github.com/thoughtbot/paperclip) storage driver for storing files in a Microsoft Azure Blob.".freeze
 
   if s.respond_to? :specification_version then
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<azure>.freeze, ["~> 0.7"])
-      s.add_runtime_dependency(%q<azure-storage>.freeze, ["~> 0.15.0.preview"])
+      s.add_runtime_dependency(%q<azure-storage-blob>.freeze, ["~> 1.0"])
       s.add_runtime_dependency(%q<hashie>.freeze, ["~> 3.5"])
       s.add_runtime_dependency(%q<addressable>.freeze, ["~> 2.5"])
       s.add_development_dependency(%q<paperclip>.freeze, [">= 4.3.6"])
@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rdoc>.freeze, ["< 6", ">= 4.0"])
     else
       s.add_dependency(%q<azure>.freeze, ["~> 0.7"])
-      s.add_dependency(%q<azure-storage>.freeze, ["~> 0.15.0.preview"])
+      s.add_dependency(%q<azure-storage-blob>.freeze, ["~> 1.0"])
       s.add_dependency(%q<hashie>.freeze, ["~> 3.5"])
       s.add_dependency(%q<addressable>.freeze, ["~> 2.5"])
       s.add_dependency(%q<paperclip>.freeze, [">= 4.3.6"])
@@ -63,7 +63,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<azure>.freeze, ["~> 0.7"])
-    s.add_dependency(%q<azure-storage>.freeze, ["~> 0.15.0.preview"])
+    s.add_dependency(%q<azure-storage-blob>.freeze, ["~> 1.0"])
     s.add_dependency(%q<hashie>.freeze, ["~> 3.5"])
     s.add_dependency(%q<addressable>.freeze, ["~> 2.5"])
     s.add_dependency(%q<paperclip>.freeze, [">= 4.3.6"])

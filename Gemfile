@@ -5,7 +5,7 @@
 source "https://rubygems.org/"
 
 gem "azure", "~>0.7"
-gem "azure-storage", "~>0.15.0.preview"
+gem "azure-storage-blob", "~>1.0"
 gem "hashie", "~>3.5"
 gem "addressable", "~>2.5"
 
